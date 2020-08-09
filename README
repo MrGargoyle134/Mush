@@ -1,0 +1,42 @@
+(C) Bilal Bouamer, all rights reserved.
+--Mush--
+
+Mush is a program that display a composite sprite at the screen.
+
+Composite Sprite?
+Yes, the mushroom is composed of 4 sprites/tiles 8x8:
+
++---------++---------+
+|      000||000      |
+|     0111||1110     |
+|    01111||11110    |
+|   011111||111110   |
+|  0111111||1111110  |
+| 01111111||11111110 |
+|011111111||111111110|
+|011111111||111111110|
++---------++---------+
++---------++---------+
+|  0222202||2022220  |
+|  0222202||2022220  |
+|  0222202||2022220  |
+|  0222222||2222220  |
+|   022222||222220   |
+|    00000||00000    |
+|         ||         |
+|         ||         |
++---------++---------+
+
+All tiles can have 3 colors or less: 0, 1, 2 or 3.
+Colors are defined in the SprPalette.
+
+Tiles are defined in tiles.spr:
+$0, Sprite 1
+$1, Sprite 2
+$2, Sprite 3
+$3  Sprite 4
+
+All tiles are diplayed in a way that it feels like there's only one.
+
+Note that I could use only 2 tiles and use them by turning them horizontally.
+
