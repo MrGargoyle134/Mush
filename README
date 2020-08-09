@@ -2,6 +2,7 @@
 --Mush--
 
 Mush is a program that display a composite sprite at the screen.
+You can run it with FCEUX emulator.
 
 Composite Sprite?
 Yes, the mushroom is composed of 4 sprites/tiles 8x8:
