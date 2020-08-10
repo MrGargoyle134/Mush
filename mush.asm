@@ -6,12 +6,6 @@
   .bank 0    ; Bank 0
   .org $C000 ; Start at $C000
 
-;; Sprite 1: ;;
-PosX1  .db 128
-PosX2  .db 136
-PosY1  .db 128
-PosY2  .db 136
-
 RESET:       ; RESET vector
   SEI
   CLD
@@ -102,7 +96,7 @@ LoadSprPaletteLoop:
   LDA #$00
   STA $020E     ; Sprite 4 Attribute
 
-  LDA PosX1
+  LDA #128
   STA $0203     ; Sprite 1 X
   LDA #136
   STA $0207     ; Sprite 2 X
